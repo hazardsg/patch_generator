@@ -29,8 +29,7 @@ for link in switch_links['link_list']:
     harness_switch_1, harness_interface_1 = patch_matrix[link['switch_1']].split(":")
     harness_switch_2, harness_interface_2 = patch_matrix[link['switch_2']].split(":")
     patch_id = link['patch_id']
-    pprint(harness_switch_1)
-    pprint(harness_switch_2)
+
     if harness_switch_1 == harness_switch_2:
         # Values pass to the templates.
         kwargs = {
@@ -52,7 +51,7 @@ for link in switch_links['link_list']:
     else:
         # Values pass to the templates.
         kwargs = {
-            'harness_interface_1': harness_interface_1,
+            'harness_interface': harness_interface_1,
             'patch_id': patch_id
         }
 
