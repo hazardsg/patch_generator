@@ -1,0 +1,10 @@
+patch panel
+   patch {{patch_id}}
+      connector 1 interface {{harness_interface_1}}
+      connector 2 pseudowire bgp vpws OHLAB pseudowire {{patch_id}}
+   !
+
+router bgp 216
+   vpws OHLAB
+      pseudowire {{patch_id}}
+         evpn vpws id local {{patch_id}} remote {{patch_id}}

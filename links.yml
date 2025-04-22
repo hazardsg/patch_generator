@@ -1,0 +1,7 @@
+link_list:
+  - switch_1: "7280SR3-1:Ethernet1"
+    switch_2: "7280SR3-2:Ethernet1"
+    patch_id: "2000"
+  - switch_1: "7280SR3-1:Ethernet2"
+    switch_2: "7050SX3-1:Ethernet1"
+    patch_id: "2001"
