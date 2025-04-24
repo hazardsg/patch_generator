@@ -87,7 +87,7 @@ for link in switch_links['link_list']:
             
     elif link['patch_type'] == 'host':
         switch, switch_interface = patch_matrix[link['switch']].split(":")
-        host_switch, host_interface = link['host'].split(":")
+        host_switch, host_interface = patch_matrix[link['host']].split(":")
         patch_id = link['patch_id']
         try:
             switch_tag = link['switch_tag']

@@ -14,14 +14,14 @@ link_list:
   # Host to Switch Patch - Untagged - Same Harness Switch
   - patch_type: "host"
     switch: "710P-1:Ethernet2"
-    host: "HARNESS4:Ethernet45"
+    host: "ESX1:NIC1/1"
     patch_id: "2002"
     encap: "untagged"
   
   # Host to Switch Patch - Tagged - Same Harness Switch
   - patch_type: "host"
     switch: "710P-1:Ethernet3"
-    host: "HARNESS4:Ethernet46"
+    host: "ESX1:NIC1/2"
     patch_id: "2003"
     encap: "tagged"
     switch_tag: "10"
@@ -29,14 +29,14 @@ link_list:
   # Host to Switch Patch - Untagged - Different Harness Switch
   - patch_type: "host"
     switch: "720DP-1:Ethernet1"
-    host: "HARNESS4:Ethernet47"
+    host: "ESX1:NIC1/3"
     patch_id: "2004"
     encap: "untagged"
 
   # Host to Switch Patch - Tagged - Different Harness Switch
   - patch_type: "host"
     switch: "720DP-1:Ethernet2"
-    host: "HARNESS4:Ethernet48"
+    host: "ESX1:NIC1/4"
     patch_id: "2005"
     encap: "tagged"
     switch_tag: "20"
