@@ -1,42 +1,42 @@
 link_list:
-  # # Switch to Switch Patch - Same Harness Switch
-  # - patch_type: "switch"
-  #   switch_a: "7280SR3-1:Ethernet1"
-  #   switch_b: "7280SR3-2:Ethernet1"
-  #   patch_id: "2000"
+  # Switch to Switch Patch - Same Harness Switch
+  - patch_type: "switch"
+    switch_a: "7280SR3-1:Ethernet1"
+    switch_b: "7280SR3-2:Ethernet1"
+    patch_id: "2000"
   
-  # # Switch to Switch Patch - Different Harness Switch
-  # - patch_type: "switch"
-  #   switch_a: "7280SR3-1:Ethernet2"
-  #   switch_b: "7050SX3-1:Ethernet1"
-  #   patch_id: "2001"
+  # Switch to Switch Patch - Different Harness Switch
+  - patch_type: "switch"
+    switch_a: "7280SR3-1:Ethernet2"
+    switch_b: "7050SX3-1:Ethernet1"
+    patch_id: "2001"
   
-  # # Host to Switch Patch - Untagged - Same Harness Switch
-  # - patch_type: "host"
-  #   switch: "710P-1:Ethernet2"
-  #   host: "HARNESS4:Ethernet45"
-  #   patch_id: "2002"
-  #   encap: "untagged"
+  # Host to Switch Patch - Untagged - Same Harness Switch
+  - patch_type: "host"
+    switch: "710P-1:Ethernet2"
+    host: "HARNESS4:Ethernet45"
+    patch_id: "2002"
+    encap: "untagged"
   
-  # # Host to Switch Patch - Tagged - Same Harness Switch
-  # - patch_type: "host"
-  #   switch: "710P-1:Ethernet3"
-  #   host: "HARNESS4:Ethernet46"
-  #   patch_id: "2003"
-  #   encap: "tagged"
-  #   switch_tag: "10"
+  # Host to Switch Patch - Tagged - Same Harness Switch
+  - patch_type: "host"
+    switch: "710P-1:Ethernet3"
+    host: "HARNESS4:Ethernet46"
+    patch_id: "2003"
+    encap: "tagged"
+    switch_tag: "10"
 
-  # # Host to Switch Patch - Untagged - Different Harness Switch
-  # - patch_type: "host"
-  #   switch: "720DP-1:Ethernet1"
-  #   host: "HARNESS4:Ethernet47"
-  #   patch_id: "2004"
-  #   encap: "untagged"
+  # Host to Switch Patch - Untagged - Different Harness Switch
+  - patch_type: "host"
+    switch: "720DP-1:Ethernet1"
+    host: "HARNESS4:Ethernet47"
+    patch_id: "2004"
+    encap: "untagged"
 
-  # # Host to Switch Patch - Tagged - Different Harness Switch
-  # - patch_type: "host"
-  #   switch: "720DP-1:Ethernet2"
-  #   host: "HARNESS4:Ethernet48"
-  #   patch_id: "2005"
-  #   encap: "tagged"
-  #   switch_tag: "20"
+  # Host to Switch Patch - Tagged - Different Harness Switch
+  - patch_type: "host"
+    switch: "720DP-1:Ethernet2"
+    host: "HARNESS4:Ethernet48"
+    patch_id: "2005"
+    encap: "tagged"
+    switch_tag: "20"

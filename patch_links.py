@@ -1,7 +1,6 @@
 import jinja2
 import yaml
 import csv
-import os
 from pprint import pprint
 
 # Jinja2 setup
