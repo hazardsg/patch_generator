@@ -1,0 +1,15 @@
+interface {{switch_interface}}.{{patch_id}}
+   encapsulation vlan
+      {% if encap == 'untagged' %}client untagged {% else %} client dot1q {{switch_tag}} {% endif %}
+!
+
+patch panel
+   patch {{patch_id}}
+      connector 1 interface {{switch_interface}}.{{patch_id}}
+      connector 2 pseudowire bgp vpws OHLAB pseudowire {{patch_id}}
+   !
+
+router bgp 216
+   vpws OHLAB
+      pseudowire {{patch_id}}
+         evpn vpws id local {{patch_id}} remote {{patch_id}}
