@@ -1,7 +1,7 @@
 {% if switch == host_switch %}
 interface {{host_interface}}.{{patch_id}}
    encapsulation vlan
-      {% if encap == 'untagged' %}client untagged {% else %}client dot1q {{patch_id}} {% endif %}
+      client dot1q {{patch_id}}
 !
 interface {{switch_interface}}.{{patch_id}}
    encapsulation vlan
@@ -14,7 +14,7 @@ patch panel
 {% else %}
 interface {{host_interface}}.{{patch_id}}
    encapsulation vlan
-      {% if encap == 'untagged' %} client untagged {% else %} client dot1q {{patch_id}} {% endif %}
+      client dot1q {{patch_id}}
 !
 patch panel
    patch {{patch_id}}
