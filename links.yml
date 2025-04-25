@@ -12,11 +12,11 @@ link_list:
   #   patch_id: "2001"
   
   # # Host to Switch Patch - Untagged - Same Harness Switch
-  - patch_type: "host"
-    switch: "7280SR-1:Ethernet1"
-    host: "ESX1:NIC1/1"
-    patch_id: "2002"
-    encap: "untagged"
+  # - patch_type: "host"
+  #   switch: "7280SR-1:Ethernet1"
+  #   host: "ESX1:NIC1/1"
+  #   patch_id: "2002"
+  #   encap: "untagged"
   
   # # Host to Switch Patch - Tagged - Same Harness Switch
   # - patch_type: "host"

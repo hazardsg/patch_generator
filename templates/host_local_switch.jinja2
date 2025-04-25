@@ -18,7 +18,7 @@ interface {{host_interface}}.{{patch_id}}
 !
 patch panel
    patch {{patch_id}}
-      connector 1 interface {{host_switch}}.{{patch_id}}
+      connector 1 interface {{host_interface}}.{{patch_id}}
       connector 2 pseudowire bgp vpws OHLAB pseudowire {{patch_id}}
 
 router bgp 216
